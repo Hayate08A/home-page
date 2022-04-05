@@ -1,4 +1,12 @@
+@import "../common_mixi.scss";
+
 .header {
-    outline: solid red 2px;
-    padding: 0.5em 1em;
+  @include flex_box();
+  @include flex_space_between();
+  outline: solid red 2px;
+  padding: 0.5em 1em;
+  &__menu {
+    @include flex_box();
+    gap: 1em;
+  }
 }
