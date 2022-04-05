@@ -1,7 +1,8 @@
 export const routingPath = {
-  home: "/",
-  samplePage: "/sample-page",
+  home: "/home",
   temple: "/temple",
+  profile: "/profile",
+  samplePage: "/sample-page",
 };
 
 export default routingPath;

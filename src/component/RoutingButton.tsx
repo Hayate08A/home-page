@@ -9,7 +9,7 @@ type TRoutingProps = {
 const RoutingButton = (props: TRoutingProps) => {
   return (
     <div className="routing-button">
-      <NavLink to={props.path}>{props.text}</NavLink>
+      <NavLink to={props.path}>{props.text ? props.text : props.path}</NavLink>
     </div>
   );
 };

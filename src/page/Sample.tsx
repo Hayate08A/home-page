@@ -1,14 +1,14 @@
-import React from 'react'
-import RoutingButton from '../component/RoutingButton';
-import routingPath from '../routing/routing-path';
+import React from "react";
+import RoutingButton from "../component/RoutingButton";
+import routingPath from "../routing/routing-path";
 
-const Sample: React.VFC = () => {
+const Profile = () => {
   return (
-    <div className="sample">
-      Sample
-      <RoutingButton text='home' path={routingPath.home}/>
+    <div className=" Profile">
+      Profile
+      <RoutingButton text='ホーム' path={routingPath.home} />
     </div>
   );
 };
 
-export default Sample
+export default Profile;

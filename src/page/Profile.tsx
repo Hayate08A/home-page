@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       Home
-      <RoutingButton text='サンプル' path={routingPath.samplePage}/>
+      <RoutingButton text='aaa' path={routingPath.home}/>
     </div>
   );
 };
