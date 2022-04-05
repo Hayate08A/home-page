@@ -12,14 +12,18 @@ function App() {
     menus: [
       {
         title: "ほーむ！",
+        path: routingPath.home,
+      },
+      {
+        title: "サンプルページ！",
         path: routingPath.samplePage,
       },
     ],
   };
   return (
     <div className="App">
-      <Header title={headerProps.title} menus={headerProps.menus} />
       <BrowserRouter>
+        <Header title={headerProps.title} menus={headerProps.menus} />
         <Routes>
           <Route index element={<Home />} />
           <Route path={routingPath.samplePage} element={<Sample />} />
