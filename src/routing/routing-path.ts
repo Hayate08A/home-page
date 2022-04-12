@@ -1,5 +1,5 @@
 export const routingPath = {
-  home: "/home",
+  home: "/",
   temple: "/temple",
   profile: "/profile",
   samplePage: "/sample-page",

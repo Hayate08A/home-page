@@ -1,9 +1,11 @@
 import React, { VFC } from "react";
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header, THeaderProps } from "./component/common/header/Header";
+import Footer from './component/common/footer/Footer';
 import Sample from "./page/Sample";
-import Home from "./page/Home";
+import Home from "./page/home/Home";
+import Profile from "./page/Profile";
 import routingPath from "./routing/routing-path";
 
 function App() {
@@ -15,19 +17,21 @@ function App() {
         path: routingPath.home,
       },
       {
-        title: "サンプルページ！",
-        path: routingPath.samplePage,
+        title: "プロフィール！",
+        path: routingPath.profile,
       },
     ],
   };
+
   return (
     <div className="App">
       <BrowserRouter>
         <Header title={headerProps.title} menus={headerProps.menus} />
         <Routes>
           <Route index element={<Home />} />
-          <Route path={routingPath.samplePage} element={<Sample />} />
+          <Route path={routingPath.profile} element={<Profile />} />
         </Routes>
+        <Footer copyright='〜写真のサイト〜'/>
       </BrowserRouter>
     </div>
   );
