@@ -1,7 +1,6 @@
-import React from "react";
-import "./Header.scss";
 import RoutingButton from "../../../component/RoutingButton";
-import routingPath from "../../../routing/routing-path";
+import "./Header.scss";
+// import routingPath from "../../../routing/routing-path";
 
 type menu = {
   title: string;

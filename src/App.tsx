@@ -1,9 +1,7 @@
-import React, { VFC } from "react";
-import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header, THeaderProps } from "./component/common/header/Header";
+import "./App.scss";
 import Footer from './component/common/footer/Footer';
-import Sample from "./page/Sample";
+import { Header, THeaderProps } from "./component/common/header/Header";
 import Home from "./page/home/Home";
 import Profile from "./page/Profile";
 import routingPath from "./routing/routing-path";
