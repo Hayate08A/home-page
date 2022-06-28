@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Footer from './component/common/footer/Footer';
+import Footer from "./component/common/footer/Footer";
 import { Header, THeaderProps } from "./component/common/header/Header";
+import "./firebaseInit";
 import Home from "./page/home/Home";
-import Profile from "./page/Profile";
+import Profile from "./page/profile/Profile";
 import routingPath from "./routing/routing-path";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path={routingPath.profile} element={<Profile />} />
         </Routes>
-        <Footer copyright='〜写真のサイト〜'/>
+        <Footer copyright="〜写真のサイト〜" />
       </BrowserRouter>
     </div>
   );

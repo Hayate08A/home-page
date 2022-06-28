@@ -1,6 +1,5 @@
-import React from "react";
-import RoutingButton from "../component/RoutingButton";
-import routingPath from "../routing/routing-path";
+import RoutingButton from "../../component/RoutingButton";
+import routingPath from "../../routing/routing-path";
 
 const Profile = () => {
   return (
